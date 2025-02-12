@@ -8,6 +8,12 @@ Adicionalmente, se ha creado un contenedor **Docker** que expone la API en el pu
 
 ---
 
+## Realizado por:
+
+- John Ricardo Sánchez
+- Hugo Steven Poveda Girata
+- Santiago González Meneses
+
 ## 🛠 Tecnologías Utilizadas
 
 - **🐍 Python 3.12.9**
