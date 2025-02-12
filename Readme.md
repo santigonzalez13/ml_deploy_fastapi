@@ -2,7 +2,7 @@
 
 ## 📌 Descripción del Proyecto
 
-Este proyecto implementa un sistema de predicción de especies de pingüinos utilizando diferentes modelos de Machine Learning. Se ha desarrollado una API utilizando **FastAPI** para realizar la inferencia y un frontend con **Streamlit** para una interfaz interactiva.
+Este proyecto implementa un sistema de predicción de especies de pingüinos utilizando diferentes modelos de Machine Learning. Se ha desarrollado una API utilizando **FastAPI** para realizar la inferencia y un frontend con **Streamlit** para una interfaz interactiva.                                                                    
 
 Adicionalmente, se ha creado un contenedor **Docker** que expone la API en el puerto **8989** y la interfaz web en el puerto **8501**. Como bono, la API permite seleccionar el modelo a utilizar en la inferencia.
 
