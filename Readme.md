@@ -24,8 +24,8 @@ Adicionalmente, se ha creado un contenedor **Docker** que expone la API en el pu
 
 ### 1️⃣ Clonar el Repositorio
 ```bash
- git clone <URL_DEL_REPOSITORIO>
- cd <NOMBRE_DEL_REPOSITORIO>
+ git clone <https://github.com/santigonzalez13/ml_deploy_fastapi.git>
+ cd <ml_deploy_fastapi>
 ```
 
 ### 2️⃣ Construir y Ejecutar el Contenedor Docker
@@ -129,8 +129,3 @@ La aplicación de **Streamlit** permite a los usuarios interactuar con la API de
 Este proyecto **cumple con el bono** al proporcionar un endpoint adicional que permite seleccionar cuál modelo será usado en el proceso de inferencia. Esto permite a los usuarios experimentar con diferentes algoritmos de Machine Learning y comparar sus resultados.
 
 ---
-
-## 📩 Contacto
-
-📧 Si tienes alguna duda o sugerencia sobre este proyecto, puedes contactarme a través de **[tu email o perfil de GitHub]**. 🚀
-
