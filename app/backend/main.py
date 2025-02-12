@@ -25,11 +25,11 @@ modelos_name = {
 @app.post("/pinguino")
 def postPinguino(pinguino: Pinguino):
     print("iciaa")
-    df = to_dataframe(pinguino)# tranforma mi calse pinguino en un dataframe como el que se uso para entenerar los modelos
-    modelos= cargar_modelos()# carga los modelos entreandos
+    df = to_dataframe(pinguino) # tranforma mi calse pinguino en un dataframe como el que se uso para entenerar los modelos
+    modelos= cargar_modelos() # carga los modelos entreandos
     print(modelos)
-    df = df[ modelos['column_order']]# define el orden de las columnas igual a las del modelo entrenado
-    listaInferencia = [modelos[f'modelo{i}'].predict(df).tolist()[0] for i in range(1, 5)]#crea una lista de los modelos 
+    df = df[ modelos['column_order']] # define el orden de las columnas igual a las del modelo entrenado
+    listaInferencia = [modelos[f'modelo{i}'].predict(df).tolist()[0] for i in range(1, 5)] #crea una lista de los modelos 
     # Función lambda para encontrar el elemento más frecuente (directamente en la línea)
     elemento_mas_frecuente = lambda lista: (lambda c: (lambda: c.most_common(1)[0][0])() if c else None)(Counter(lista))
     elemento_mas_comun = elemento_mas_frecuente(listaInferencia)
@@ -41,11 +41,11 @@ def postPinguino(pinguino: Pinguino):
 def postPinguino(pinguino: Pinguino, modelo:str):
     print("inicia")
     print( modelos_name[modelo])
-    df = to_dataframe(pinguino)# tranforma mi calse pinguino en un dataframe como el que se uso para entenerar los modelos
-    modelos= cargar_modelos()# carga los modelos entreandos
+    df = to_dataframe(pinguino) # tranforma mi calse pinguino en un dataframe como el que se uso para entenerar los modelos
+    modelos= cargar_modelos() # carga los modelos entreandos
     print(type(modelos))
     print(modelos)
-    df = df[ modelos['column_order']]# define el orden de las columnas igual a las del modelo entrenado
+    df = df[ modelos['column_order']] # define el orden de las columnas igual a las del modelo entrenado
     
     inferencia = modelos[modelo].predict(df)    
     print("data :", inferencia)
