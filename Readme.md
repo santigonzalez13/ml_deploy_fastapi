@@ -25,7 +25,7 @@ Adicionalmente, se ha creado un contenedor **Docker** que expone la API en el pu
 ### 1️⃣ Clonar el Repositorio
 ```bash
  git clone <https://github.com/santigonzalez13/ml_deploy_fastapi.git>
- cd <ml_deploy_fastapi>
+ cd <ml_deploy_fastapi/app/backend>
 ```
 
 ### 2️⃣ Construir y Ejecutar el Contenedor Docker
@@ -121,6 +121,10 @@ La aplicación de **Streamlit** permite a los usuarios interactuar con la API de
 1️⃣ Ingresar las características de un pingüino.  
 2️⃣ Seleccionar el modelo de Machine Learning.  
 3️⃣ Obtener la predicción en tiempo real.  
+
+Así deberás ver la interfaz:
+
+![alt text](image.png)
 
 ---
 
