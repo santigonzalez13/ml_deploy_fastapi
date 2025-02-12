@@ -13,7 +13,8 @@ import os
 #cargadataset
 current_dir = os.path.dirname(os.path.abspath(__file__))
 df = pd.read_csv(os.path.join(current_dir, "data", "penguins_size.csv"))
-#limpesa y tranfomracion feactures categoricoa 
+
+#limpeza y tranfomracion feactures categoricoa 
 df.dropna(inplace=True)  # Eliminar filas con valores faltantes (opción simple para este dataset)
 df = pd.get_dummies(df, columns=[ 'island', 'sex'], drop_first=True)
 
